@@ -1,11 +1,6 @@
 const {Router} = require('express')
 const router = Router()
-const {
-  getBaseValues,
-  getCustom1Values,
-  getCustom2Values,
-  getValuesByType,
-} = require('../controllers/expressions.controller')
+const {getValuesByType} = require('../controllers/expressions.controller')
 const {validationResult} = require('express-validator')
 const {PAYLOAD_VALIDATION_RULES} = require('../constants')
 const {EXPRESSION_TYPES} = require('../constants')
