@@ -22,7 +22,7 @@ class BaseExpressions {
       this.k = 0
     }
 
-    return [this.h, this.k]
+    return {H: this.h, K: this.k}
   }
 
   get values() {
@@ -47,7 +47,7 @@ class BaseExpressionsCustom1 extends BaseExpressions {
       this.k = 0
     }
 
-    return [this.h, this.k]
+    return {H: this.h, K: this.k}
   }
 }
 
@@ -70,7 +70,7 @@ class BaseExpressionsCustom2 extends BaseExpressions {
       this.k = 0
     }
 
-    return [this.h, this.k]
+    return {H: this.h, K: this.k}
   }
 }
 

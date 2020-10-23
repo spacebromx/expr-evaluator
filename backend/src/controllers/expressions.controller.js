@@ -1,16 +1,14 @@
 const {BaseExpressions} = require('../models/Expressions')
+const {body, validationResult} = require('express-validator')
 
 let expressionsController = {
   getValues: (req, res) => {
-    const input = {
-      A: true,
-      B: true,
-      C: false,
-      D: 3.3,
-      E: 10,
-      F: 10,
+    const errors = validationResult(req)
+    if (!errors.isEmpty()) {
+      return res.status(400).json({errors: errors.array()})
     }
-    const c = new BaseExpressions(input)
+
+    const c = new BaseExpressions(req.body)
     res.json(c.values)
   },
 }
