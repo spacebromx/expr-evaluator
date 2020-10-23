@@ -9,6 +9,13 @@ const PAYLOAD_VALIDATION_RULES = [
   body('F').isInt(),
 ]
 
+const EXPRESSION_TYPES = {
+  BASE: 'BASE',
+  CUSTOM1: 'CUSTOM1',
+  CUSTOM2: 'CUSTOM2',
+}
+
 module.exports = {
   PAYLOAD_VALIDATION_RULES,
+  EXPRESSION_TYPES,
 }
