@@ -5,7 +5,7 @@
   "author": "Alan Medina <realconect@gmail.com> (https://alanmedina.me/)",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "start": "nodemon src/index.js",
     "test": "jest"
   },
   "dependencies": {
