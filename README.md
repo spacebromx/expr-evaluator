@@ -3,7 +3,7 @@ The goal is to calculate the value of `H` and `K`, which are dependant on the in
 
 ## Architecture
 
-I divided the exercise in two folders.
+I divided the exercise into:
 - backend: Where all the node/express code lives, and where the logic was loaded to calculate the expressions
 - frontend: It's a bootstrapped app created with Create React App. It consists of a little form where the user can modify the parameters and send a request to the backend to get the result.
 
